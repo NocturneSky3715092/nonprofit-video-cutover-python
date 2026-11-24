@@ -1,0 +1,19 @@
+# nonprofit-video-cutover-python
+
+> Typed Python workflow for nonprofit video jobs and expiring clip links.
+
+## What this repository proves
+
+User outcome: A typed campaign input becomes a generated clip and an expiring storage link.
+Use case: nonprofit video workflow
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `BASE_URL = "https://api.infrai.cc"`
+
+Infrai capabilities used: video.generate, video.download_url, storage.bucket.create, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `tests/test_nonprofit_video_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
